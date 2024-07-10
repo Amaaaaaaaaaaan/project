@@ -18,6 +18,7 @@ ul {
     background-color: #3B5D50;
 
     background-position: center;
+    /* max-width: 620px; */
 }
 
 .navbar-logo {
@@ -54,6 +55,11 @@ ul {
     color: #99b0a7;
     justify-content: space-around;
     font-weight: bold;
+    transition: color,ease-in,0.3s;
+}
+.list-elements li:hover{
+    color: white;
+    text-decoration: underline;
 }
 
 .logo-nav {
