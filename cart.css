@@ -1,0 +1,12 @@
+.flexbox1
+{
+    display: grid;
+    /* contain: layout; */
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 100px;
+    margin-left: 100px;
+    font-size: 2em;
+    text-align: center;
+
+}
