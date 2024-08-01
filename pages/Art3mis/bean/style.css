@@ -38,3 +38,25 @@ a:hover{
     color: white;
     text-decoration: underline;
 }
+.container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.item3{
+  
+    height:320px;
+
+}
+.container3{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.item4{
+    margin-top: 30px;
+  margin-right: 80px;
+    width: 50px;
+    height: 40px;
+    gap:0px;
+}
