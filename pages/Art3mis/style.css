@@ -1,61 +1,180 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
-.navbar-container{
+
+.navbar-container {
     display: flex;
     justify-content: space-between;
     background-color: black;
     padding: 11px 0 9px;
 
 }
-.wiz-logo{
+
+.wiz-logo {
     margin: 0 auto;
 }
-.icons-container{
- display: flex;
- list-style: none;
+
+.icons-container {
+    display: flex;
+    list-style: none;
     flex-direction: row;
     align-items: center;
     padding: 0 65px;
 }
-.icons-container li{
+
+.icons-container li {
     margin-right: 14px;
 }
-.hovericon:hover{
+
+.hovericon:hover {
     transform: rotateY(180deg);
 }
-.search-container{
+
+.search-container {
     display: flex;
     align-items: center;
     margin-right: 25px;
 
 }
-.search-field{
+
+.search-field {
     background: #353434;
+    color: white;
 }
-.search-icon{
+
+.search-icon {
     position: absolute;
     margin: 2px 0px 0px 193px;
 }
-.button1{
-background: black;
-border: 1px solid black;
-color: white;
-margin:7px;
-padding: 6px;
-cursor: pointer;
+
+.button1 {
+    background: black;
+    border: 1px solid black;
+    color: white;
+    margin: 7px;
+    padding: 6px;
+    font-family: Poppins;
+    cursor: pointer;
 }
-.button1:hover{
+
+.button1:hover {
     background-color: #353434;
     border-radius: 3px;
 }
-.button2{
+
+.button2 {
     background: #4642a6;
-    margin:7px;
+    margin: 7px;
     color: white;
-padding: 6px;
-border-radius: 4px;
-border:1px solid #4642a6;
+    font-family: Poppins;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #4642a6;
+}
+
+.header-list-elem {
+    display: flex;
+    color: white;
+    list-style: none;
+    background-color: black;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.header-list-elem-style{
+    cursor:pointer;
+    font-family: Poppins;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.arrows {
+    transition: transform 0.3s ease; /* Smooth transition for rotation */
+}
+/* added classes for the rotation (logic implemented using classList property) */
+.rotate-270 {
+    transform: rotate(270deg);
+}
+
+.rotate-90 {
+    transform: rotate(90deg);
+}
+.second-container{
+    width: 100%;
+    height: 100%;
+    background-image: url(images/hp-f6-harry-at-slug-club-homepage-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    overflow: hidden;
+    box-shadow: inset 0px 0px 50px rgb(0, 0, 1);
+}
+.second-header-text{
+    /* font-family: Bluu Next,ヒラギノ角ゴ Pro W3,Hiragino Kaku Gothic Pro,Osaka,メイリオ,Meiryo,ＭＳ Ｐゴシック,MS PGothic,serif; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    margin-top:90px;
+    text-align: center;
+    text-shadow: 0 0 20px #000;
+    margin-bottom: 30px;
+}
+.subheader{
+    font-family: Poppins;
+    display:flex ;
+font-size: 20px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: white;
+    text-shadow: 0 0 20px #000;
+}
+.explore-btn{
+    padding: 15px 20px;
+    margin: 15px;
+    font-family: Poppins;
+    font-size: 16px;
+    border-radius: 50px;
+    font-weight: 600;
+    background-color:transparent;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+.explore-btn:hover{
+    color: black;
+    background-color: rgb(255, 245, 245);
+    border: white;
+    
+}
+.popup-image{
+    z-index: 10002;
+    background-color: #10141B;
+    /* padding-top:20px; */
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 0px 0px 50px rgb(20, 20, 30);
+    
+position: absolute;
+flex-flow: column;
+width:100vw;
+
+
+
+}
+
+.popup-image img{
+    height: 130px;
+    width: 130px;
+    padding: 10px;
+    /* filter: brightness(0.7); */
+}
+.hidden-img1{
+    margin-left:620px
 }
