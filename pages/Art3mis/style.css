@@ -156,11 +156,11 @@ font-size: 20px;
 .popup-image{
     z-index: 10002;
     background-color: #10141B;
-    /* padding-top:20px; */
-    display: flex;
+    
+
+    
     justify-content: center;
     box-shadow: inset 0px 0px 50px rgb(20, 20, 30);
-    
 position: absolute;
 flex-flow: column;
 width:100vw;
@@ -168,7 +168,21 @@ width:100vw;
 
 
 }
+/* .popup-image-appear{
+    z-index: 10002;
+    
+    
 
+    display:flex;
+    justify-content: center;
+    box-shadow: inset 0px 0px 50px rgb(20, 20, 30);
+position: absolute;
+flex-flow: column;
+width:100vw;
+
+
+
+} */
 .popup-image img{
     height: 130px;
     width: 130px;

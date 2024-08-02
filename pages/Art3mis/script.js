@@ -31,22 +31,26 @@ searchBar.addEventListener("click", searchClickFunc);
 // });
 document.addEventListener("DOMContentLoaded", () => {
         let downArrows = document.querySelectorAll(".arrows");
-     let popup=document.getElementById("popup")
+        let popup=document.getElementsByClassName("popup-image")[0]
+        popup.style.display="none"
         downArrows.forEach(downArrow => {
             downArrow.addEventListener("click", () => {
                 if(downArrow.classList.contains("rotate-270")){
-                    popup.style.display="none"
-                    popup.style.transition="0.3s ease-in-out"
+                 popup.style.display="none"
                     downArrow.classList.add("rotate-90")
                     downArrow.classList.remove("rotate-270")
-                    console.log("hel;l")
+                    console.log("upar")
                 }
                 else{
-                          popup.style.display="flex"
+            
                     downArrow.classList.add("rotate-270")
+                    popup.style.display="flex"
                     downArrow.classList.remove("rotate-90")
-                    console.log("hel;l")
+                    console.log("niche")
                 }
             });
         });
     });
+    //rotate 270 pe display = flex
+    //rotate 90 pe display=none
+   
