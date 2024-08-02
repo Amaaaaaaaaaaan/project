@@ -51,6 +51,43 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     });
+    
     //rotate 270 pe display = flex
     //rotate 90 pe display=none
-   
+  //adding different images for the popup block for different elements
+    
+  let discover = document.getElementById("discover");
+  let imgBlock = document.getElementById("popup");
+  
+  let imageAdder = () => {
+      imgBlock.innerHTML = `
+        
+          <img src="images/webnav_400x400_experiences.webp"  class="hidden-img" alt="">
+<img src="images/Secondary-Nav_Portkey-Games_2x.webp"  class="hidden-img" alt="">
+<img src="images/webnav_400x400_films_01.webp"  class="hidden-img" alt="">
+<img src="images/webnav_400x400_stage_01.webp"  class="hidden-img" alt="">
+<img src="images/webnav_400x400_books_01.webp"  class="hidden-img" alt="">
+      `;
+  };
+  discover.addEventListener("click",imageAdder)
+  let firstListElem=document.getElementById("first-list-elem")
+let firstImgAdder=()=>{
+    imgBlock.innerHTML=`
+    
+    <img src="images/webnav_400x400_News_01.webp"  class="hidden-img" alt="">
+                <img src="images/webnav_400x400_Features_01.webp" class="hidden-img2" alt="">
+    
+    `
+}
+firstListElem.addEventListener("click",firstImgAdder);
+let secondListElem=document.getElementById("second-list-elem")
+let secondImgAdder=()=>{
+    imgBlock.innerHTML=`
+    
+   <img src="images/webnav_400x400_puzzles_01.webp"  class="hidden-img" alt="">
+<img src="images/Quizzes_Nav_1.webp"  class="hidden-img" alt="">
+    
+    `
+}
+secondListElem.addEventListener("click",secondImgAdder);
+
