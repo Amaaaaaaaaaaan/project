@@ -59,28 +59,64 @@ document.addEventListener("DOMContentLoaded", () => {
   let discover = document.getElementById("discover");
   let imgBlock = document.getElementById("popup");
   
+
+  let firstListElem=document.getElementById("first-list-elem")
+  let firstImgText=document.getElementById("first-image-text")
+  let secondImgText=document.getElementById("second-image-text")
+  let thirdImgText=document.getElementById("third-image-text")
+  let fourthImgText=document.getElementById("fourth-image-text")
+  let fifthImgText=document.getElementById("fifth-image-text")
+  let popupText=document.getElementById("popup-text")
   let imageAdder = () => {
-      imgBlock.innerHTML = `
-        
-          <img src="images/webnav_400x400_experiences.webp"  class="hidden-img" alt="">
+    imgBlock.innerHTML = `
+      
+        <img src="images/webnav_400x400_experiences.webp"  class="hidden-img" alt="">
 <img src="images/Secondary-Nav_Portkey-Games_2x.webp"  class="hidden-img" alt="">
 <img src="images/webnav_400x400_films_01.webp"  class="hidden-img" alt="">
 <img src="images/webnav_400x400_stage_01.webp"  class="hidden-img" alt="">
 <img src="images/webnav_400x400_books_01.webp"  class="hidden-img" alt="">
-      `;
-  };
-  discover.addEventListener("click",imageAdder)
-  let firstListElem=document.getElementById("first-list-elem")
+    `;
+  //   news.style.left="400px"
+  //   news.style.top="60px"
+  //   features.style.left="1100px"
+  //   features.style.top="60px"
+    
+  
+  firstImgText.textContent="FILM"
+  secondImgText.textContent="EXPERIENCE"
+  thirdImgText.textContent="GAMES"
+  fourthImgText.textContent="STAGE"
+  fifthImgText.textContent="BOOKS"
+/*
+here the problem arised because on firstImgAdder click event the display was turning into none hence was 
+the text was not displaying hence converting into flex here
+*/
+firstImgText.style.display="flex"
+        fourthImgText.style.display="flex"
+        fifthImgText.style.display="flex";
+
+popupText.style.padding="0px 0px 0px 0px"
+};
+discover.addEventListener("click",imageAdder)
 let firstImgAdder=()=>{
     imgBlock.innerHTML=`
     
     <img src="images/webnav_400x400_News_01.webp"  class="hidden-img" alt="">
                 <img src="images/webnav_400x400_Features_01.webp" class="hidden-img2" alt="">
     
+
     `
+        secondImgText.textContent="NEWS"
+        thirdImgText.textContent="FEATURES"
+        firstImgText.style.display="none"
+        fourthImgText.style.display="none"
+        fifthImgText.style.display="none";
+        popupText.style.padding="0px 0px 0px 25px"
 }
 firstListElem.addEventListener("click",firstImgAdder);
 let secondListElem=document.getElementById("second-list-elem")
+let news=document.getElementById("news");
+let features=document.getElementById("features")
 let secondImgAdder=()=>{
     imgBlock.innerHTML=`
     
@@ -88,6 +124,12 @@ let secondImgAdder=()=>{
 <img src="images/Quizzes_Nav_1.webp"  class="hidden-img" alt="">
     
     `
+    secondImgText.textContent="QUIZZES"
+        thirdImgText.textContent="PUZZLES"
+        firstImgText.style.display="none"
+        fourthImgText.style.display="none"
+        fifthImgText.style.display="none";
+    
 }
 secondListElem.addEventListener("click",secondImgAdder);
 

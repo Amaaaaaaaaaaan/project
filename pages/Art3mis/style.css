@@ -27,7 +27,9 @@
 .icons-container li {
     margin-right: 14px;
 }
-
+.hovericon{
+    transition: 0.4s ease-in-out;
+}
 .hovericon:hover {
     transform: rotateY(180deg);
 }
@@ -62,6 +64,7 @@
 .button1:hover {
     background-color: #353434;
     border-radius: 3px;
+    
 }
 
 .button2 {
@@ -72,6 +75,11 @@
     padding: 6px;
     border-radius: 4px;
     border: 1px solid #4642a6;
+    cursor: pointer;
+}
+.button2:hover{
+    filter: brightness(1.5);
+    transition: filter 0.3s ease-in-out;
 }
 
 .header-list-elem {
@@ -156,7 +164,7 @@ font-size: 20px;
 }
 .explore-btn{
     padding: 15px 20px;
-    margin: 15px;
+    margin: 18px;
     font-family: Poppins;
     font-size: 16px;
     border-radius: 50px;
@@ -165,6 +173,7 @@ font-size: 20px;
     color: white;
     border: 1px solid white;
     cursor: pointer;
+
     transition: 0.3s ease-out;
 }
 .explore-btn:hover{
@@ -208,7 +217,36 @@ width:100vw;
     width: 130px;
     padding: 10px;
     /* filter: brightness(0.7); */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    cursor: pointer;
 }
 .hidden-img1{
     margin-left:620px
+}
+.popup-image img:hover{
+    transform: translateY(-10px); /* Lifts the hovered image */
+    opacity: 1; /* Ensures the hovered image stays fully visible */
+}
+.popup-image img:not(:hover){
+    opacity: 0.6;
+}
+.text-popup{
+    color: white;
+    position: absolute;
+    z-index: 100002;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    top: 82px;
+    /*left:684px; */
+    display: flex;
+    padding: 1px 15px 1px 0px;
+    font-size: 12px;
+    justify-content: space-around;
+    gap: 90px;
+    font-weight: 500;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.text-popup:hover{
+    transform: translateY(-10px); /* Lifts the hovered image */
+    opacity: 1; /* Ensures the hovered image stays fully visible */
 }
